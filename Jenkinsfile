@@ -6,11 +6,11 @@ stage('Build') {
   withMaven(maven: 'M3') {
     // some block
     if (isUnix()){
-          sh 'mvn -Dmaven.test.failure.ignore2. clean package'
+          sh 'mvn -Dmaven.test.failure.ignore clean package'
                   }
     else
         {
-        bat 'mvn -Dmaven.test.failure.ignore2. clean package'
+        bat 'mvn -Dmaven.test.failure.ignore clean package'
          }
 
     }   
