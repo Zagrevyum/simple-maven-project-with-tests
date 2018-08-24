@@ -17,7 +17,7 @@ stage('Build') {
     
     stage ('Results')
     {
-    junit '**/target/surefire-reports/TEST-.*.xml'
+    junit '**/target/surefire-reports/TEST-*.xml'
     archive 'target/*.jar'
     }
 
